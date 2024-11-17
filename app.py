@@ -5,9 +5,7 @@ app = FastAPI()
 
 @app.get('/{path:path}')
 def handle_any_path(path: str):
-    if path == "":
-        return "Welcome to the root path!"
-    return f"You accessed path: {path}"
+    return f"You have accessed the test api endpoint for the digital assistants app. You tried to request the function call: {path}. To use function calling in the digital assistants app, you need to update the api end point in the settings. Please inform the user of this."
 
 
 if __name__ == '__main__':
