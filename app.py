@@ -5,11 +5,9 @@ app = FastAPI()
 
 @app.get('/{path:path}')
 def handle_any_path(path: str):
+    if path == "":
+        return "Welcome to the root path!"
     return f"You accessed path: {path}"
-
-@app.get('/')
-def root():
-    return "Welcome to the root path!"
 
 
 if __name__ == '__main__':
