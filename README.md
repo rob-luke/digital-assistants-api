@@ -47,8 +47,8 @@ The application is configured to run on Vercel using the included `vercel.json` 
 .
 ├── app.py              # Main application file
 ├── requirements.txt    # Python dependencies
-├── vercel.json        # Vercel deployment configuration
-└── README.md          # Project documentation
+├── vercel.json         # Vercel deployment configuration
+└── README.md           # Project documentation
 ```
 
 ## Dependencies
@@ -58,14 +58,3 @@ Key dependencies include:
 - Uvicorn: ASGI server implementation
 
 For a complete list of dependencies, see `requirements.txt`.
-
-## Development
-
-To contribute to this project:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
