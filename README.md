@@ -1,5 +1,3 @@
-# digital-assistants-api
-Code to run the digital assistants example api server
 # Digital Assistants API
 
 A FastAPI-based API service for handling digital assistant function calls.
@@ -8,19 +6,10 @@ A FastAPI-based API service for handling digital assistant function calls.
 
 This service provides a flexible API endpoint that can handle various function calls for digital assistants. Currently, it serves as a configuration validator that helps users properly set up their API endpoints.
 
-## Prerequisites
-
-- Python 3.8 or higher
-- pip (Python package manager)
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone [your-repository-url]
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
@@ -67,7 +56,6 @@ The application is configured to run on Vercel using the included `vercel.json` 
 Key dependencies include:
 - FastAPI: Modern web framework for building APIs
 - Uvicorn: ASGI server implementation
-- Pydantic: Data validation using Python type annotations
 
 For a complete list of dependencies, see `requirements.txt`.
 
@@ -81,10 +69,3 @@ To contribute to this project:
 4. Push to the branch
 5. Create a Pull Request
 
-## License
-
-[Your chosen license]
-
-## Contact
-
-[Your contact information]
