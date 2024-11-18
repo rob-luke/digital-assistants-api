@@ -11,6 +11,17 @@ class RequestBody(BaseModel):
 app = FastAPI()
 
 
+@app.post("/verify")
+def verify_endpoint(request_body: RequestBody):
+    if request_body.password != PASSWORD:
+        raise HTTPException(status_code=400, detail="Incorrect password")
+        
+    return {
+        "message": "you have successfully connected to the verify endpoint",
+        "result": "success"
+    }
+
+
 @app.api_route("/{path:path}", methods=["GET", "POST"])
 def handle_any_path(path: str, request_body: RequestBody = None):
     # For POST requests, verify password in body
