@@ -1,10 +1,14 @@
-# Digital Assistants API
+# Digital Assistants - Example Function Calling Server Backend
 
-A FastAPI-based API service for handling digital assistant function calls.
+[Digital Assistant](https://apps.apple.com/au/app/digital-assistants/id6514299510) simplifies how you connect with and manage your personalized AI assistants. Digital Assistant provides a great user experience over the OpenAI Assistants API. Supporting multiple conversations, customizable assistant behavior, and advanced features like function calling, the app delivers a clean, user-friendly interface to maximize your AI tools' potential. Whether you're implementing advanced integrations or seeking seamless, distraction-free interactions, Digital Assistant puts powerful functionality at your fingertips.
+
+This repository provides a template server to use as a backend for utilising function calls with [Digital Assistant](https://apps.apple.com/au/app/digital-assistants/id6514299510). 
 
 ## Description
 
-This service provides a flexible API endpoint that can handle various function calls for digital assistants. Currently, it serves as a configuration validator that helps users properly set up their API endpoints.
+This is a FastAPI-based API service for handling [Digital Assistant](https://apps.apple.com/au/app/digital-assistants/id6514299510) function calls.
+This service provides a flexible API endpoint that can handle various function calls for digital assistants. 
+Currently, it serves as a configuration validator that helps users properly set up their API endpoints.
 
 
 ## Installation
@@ -37,19 +41,11 @@ The application is configured to run on Vercel using the included `vercel.json` 
 - Response Format:
 ```json
 {
-    "message": "Configuration Required",
-    "result": "Configuration instruction message"
+    "message": "...",
+    "result": ".."
 }
 ```
 
-## Project Structure
-```
-.
-├── app.py              # Main application file
-├── requirements.txt    # Python dependencies
-├── vercel.json         # Vercel deployment configuration
-└── README.md           # Project documentation
-```
 
 ## Dependencies
 
